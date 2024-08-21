@@ -1,0 +1,4 @@
+1. Make it save data for all 12 months.
+2. Add a yearly calendar to check your consistency with any habit over months.
+3. Adding notes to link your efforts over a period for a project.
+4. Add a readme file explaining the program.
