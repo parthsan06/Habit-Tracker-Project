@@ -1,4 +1,27 @@
 1. Make it save data for all 12 months.
 2. Add a yearly calendar to check your consistency with any habit over months.
 3. Adding notes to link your efforts over a period for a project.
-4. Add a readme file explaining the program.
+4. readme file should be a numbered list, explaining the code line by line, like chatgpt does for you.
+5. allow user to add new habit entry with a button and a shortcut(like Ctrl+N), and on hovering over the button display the shortcut.
+6. give it a cooler design.
+7. accounts for users, and store user data remotely(online).
+8. integrate atomic habits methodology into it.
+9. Error Handling: Consider adding more robust error handling to manage unexpected scenarios gracefully.
+10. User Experience: You can enhance the UI by adding features like dynamic habit addition, progress tracking, or visual summaries.
+11. Data Persistence: Ensure that your application correctly handles scenarios like empty files or corrupted data to prevent crashes.
+
+DONE.Add a readme file explaining the program.
+
+
+
+    with open(filename, 'w') as file:
+            file.write(entry.get() + ';' + ','.join(str(var.get()) for var in checkbox_vars) + '\n')
+
+# Load the saved data if available
+            if j < len(saved_entries):
+            line = saved_entries[j].strip()
+            print(f"Loaded line: '{line}'")  # Debugging: print the loaded line
+            if ';' in line:
+                entry_data, checkbox_data = line.split(';', 1)
+                entry.insert(0, entry_data)
+                checkbox_states = checkbox_data.split(',')
